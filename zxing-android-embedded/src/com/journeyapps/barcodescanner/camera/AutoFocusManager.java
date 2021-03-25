@@ -77,6 +77,7 @@ public final class AutoFocusManager {
         String currentFocusMode = camera.getParameters().getFocusMode();
         useAutoFocus = settings.isAutoFocusEnabled() && FOCUS_MODES_CALLING_AF.contains(currentFocusMode);
         Log.i(TAG, "Current focus mode '" + currentFocusMode + "'; use auto focus? " + useAutoFocus);
+        Log.i(TAG, AUTO_FOCUS_INTERVAL_MS);
         start();
     }
 
